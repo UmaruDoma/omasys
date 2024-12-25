@@ -148,3 +148,12 @@ main h2 {
 #tab-content code {
   font-size: 1rem;
 }
+
+dasrot {
+ color: red;
+ text-align:left;
+ }
+ dasgelb {
+ color: yellow;
+ text-align:right;
+ }
