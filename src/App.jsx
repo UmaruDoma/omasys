@@ -1,18 +1,21 @@
-import "./index.css";
 import Timeblock from "./components/Timeblock";
 import Anrede from "./components/Anrede";
 import Morgensatz from "./components/Morgensatz";
-export default function App() {
-  //const du = Anrede();
+function App() {
   return (
-    <div >
-      <h1>
-        Hallo <Anrede />
-      </h1>
-      <h2>
-       <Morgensatz />
-      </h2>
-      <Timeblock />
+    <div>
+      <header>
+        <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+        <h1>Hallo <Anrede /></h1>
+        <p>
+           <Morgensatz />
+        </p>
+      </header>
+      <main>
+        <h1> <Timeblock /> </h1>
+      </main>
     </div>
   );
 }
+
+export default App;
