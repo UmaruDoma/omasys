@@ -5,12 +5,12 @@ import Morgensatz from "./components/Morgensatz";
 export default function App() {
   //const du = Anrede();
   return (
-    <div className="App">
+    <div >
       <h1>
         Hallo <Anrede />
       </h1>
       <h2>
-        <Morgensatz />
+       <Morgensatz />
       </h2>
       <Timeblock />
     </div>
