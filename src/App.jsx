@@ -1,6 +1,7 @@
 import reactImg from "./assets/react-core-concepts.png";
 import Timeblock from "./components/Timeblock";
 import Anrede from "./components/Anrede";
+import DisplayTime from "./components/DisplayTime";
 import  "./grid.css";
 import Morgensatz from "./components/Morgensatz";
 function App() {
