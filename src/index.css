@@ -42,7 +42,7 @@ header h1 {
 
 header p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: xx-large;
   color: #8964b0;
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -152,8 +152,16 @@ main h2 {
 dasrot {
  color: red;
  text-align:left;
+ font-size: x-large;
+ font-weight: bolder;
  }
  dasgelb {
  color: yellow;
  text-align:right;
+ font-size: x-large;
+ font-weight: bolder;
+ }
+ p {
+  font-size: x-large;
+  font-weight: bolder;
  }
