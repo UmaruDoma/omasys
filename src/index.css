@@ -161,7 +161,19 @@ dasrot {
  font-size: x-large;
  font-weight: bolder;
  }
+ dasgruen {
+  color: greenyellow;
+  text-align:right;
+  font-size: x-large;
+  font-weight: bolder;
+  }
  p {
   font-size: x-large;
   font-weight: bolder;
+ }
+ important{
+  color:lime;
+  font-size: xx-large;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
  }

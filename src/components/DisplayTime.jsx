@@ -4,9 +4,9 @@ export default function DisplayTime() {
     
     return (
     <p>
-     Heutiges Datum: {ddatum.dday}.{ddatum. dmonth}.{ddatum. dyear} <br/>
-     Heute ist :  {ddatum.dwochtag }<br/>
-      ! Es ist jetzt :        {ddatum.dhours} :      {ddatum.dminutes}  Uhr 
+     Heutiges Datum: <important>{ddatum.dday}.{ddatum. dmonth}.{ddatum. dyear}</important> <br/>
+     Heute ist : <important> {ddatum.dwochtag }</important><br/>
+      ! Es ist jetzt :     <important>   {ddatum.dhours} :      {ddatum.dminutes} </important> Uhr 
     </p>
     );
  
