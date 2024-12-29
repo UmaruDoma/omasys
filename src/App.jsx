@@ -1,9 +1,13 @@
 import reactImg from "./assets/react-core-concepts.png";
+//import reactImg from "https://www.mariowiki.com/Gallery:Toad#/media/File:Toadsmb2.jpg";
 import Timeblock from "./components/Timeblock";
 import Anrede from "./components/Anrede";
 import DisplayTime from "./components/DisplayTime";
+import Buttons from "./components/Buttons";
 import  "./grid.css";
 import Morgensatz from "./components/Morgensatz";
+import 'react-slideshow-image/dist/styles.css'
+import Slideshow from "./components/Slideshow";
 function App() {
   return (
  //   <div>
@@ -18,13 +22,20 @@ function App() {
   //       <h1> Heute : <Timeblock /> </h1>
   //     </main>
  //   </div>
-    <div id="grid">
-	  <div id="obenlinks"><dasgruen><p>Hallo <Anrede /> ..... <Morgensatz /></p></dasgruen> <p><DisplayTime /> </p></div>
-	  <div id="untenlinks"><p><dasgruen>Wir kommen gleich vorbei</dasgruen></p></div>
-	  <div id="mittelinks"><p>Heute</p><p>9:00 Frühstück <br/> 12:00 Es ist jetzt Zeit für  Mittagessen<br/>18:00 Abendessen<br/>Morgen<br/>9:00 Frühstück<br/>12:00 Mittagessen<br/>15:00 Friseur<br/>18:00 Abendessen</p></div>
-	  <div id="obenmitterechts"><img src={reactImg} alt="Stylized atom" /></div>
-	  <div id="untenrechts"><p><dasrot>Hallo</dasrot></p><p><dasgelb>Hallo hier</dasgelb></p></div>
-	</div>
+
+
+
+
+<div class="wrapper">
+  <div class="box"><DisplayTime /> </div>
+  <div class="box"><dasgruen><p>Hallo <Anrede /> ..... <Morgensatz /><Buttons /></p></dasgruen> </div>
+  <div class="box"><p><finished>9:00 Frühstück </finished> <br/><important> 12:00 Es ist jetzt Zeit für  Mittagessen</important><br/>18:00 Abendessen<br/><hr />Morgen<br/>15:00 Friseur</p></div>
+  <div class="box"><img src={reactImg} alt="Stylized atom" /></div>
+
+</div>
+
+
+
   );
 }
 

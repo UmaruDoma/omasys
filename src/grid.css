@@ -1,37 +1,17 @@
-/**
- * Define the space for each grid item by declaring the grid
- * on the grid container.
- */
-#grid {
-  /**
-   * Two columns:
-   *  1. the first sized to content,
-   *  2. the second receives the remaining space
-   *     (but is never smaller than the minimum size of the board
-   *     or the game controls, which occupy this column [Figure 4])
-   *
-   * Three rows:
-   *  3. the first sized to content,
-   *  4. the middle row receives the remaining space
-   *     (but is never smaller than the minimum height
-   *      of the board or stats areas)
-   *  5. the last sized to content.
-   */
+.wrapper {
   display: grid;
-  grid-template-columns:
-    /* 1 */ auto
-    /* 2 */ 1fr;
-  grid-template-rows:
-    /* 3 */ auto
-    /* 4 */ 1fr
-    /* 5 */ auto;
+  gap: 3px;
+  grid-template-columns: 400px  auto;
+  grid-template-rows: 180px   auto;
 }
+.box{
+  box-sizing: border-box;
+  color: #e74b87;
+  border-color: rgb(5, 5, 5);
+  border-width: 2px;
+  background-color: rgb(70, 68, 57);
 
-/* Specify the position of each grid item using coordinates on
- * the 'grid-row' and 'grid-column' properties of each grid item.
- */
-#obenlinks    { grid-column: 1; grid-row: 1; }
-#untenlinks    { grid-column: 1; grid-row: 3; }
-#mittelinks    { grid-column: 1; grid-row: 2; align-self: start; }
-#obenmitterechts    { grid-column: 2; grid-row: 1 / span 2; }
-#untenrechts { grid-column: 2; grid-row: 3; justify-self: left; }
+  border-spacing: 3px;
+  text-align: left;
+ 
+}
